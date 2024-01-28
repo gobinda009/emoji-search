@@ -1,6 +1,6 @@
 const form = document.querySelector(".search-bar"); // accessed the form.
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("input", (e) => {
     e.preventDefault(); // prevent the default action.
 
     const value = document.getElementById('search').value;
