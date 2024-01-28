@@ -8,6 +8,14 @@ form.addEventListener("input", (e) => {
 
     displaySearchResults(value);
 });
+form.addEventListener("click", (e) => {
+    e.preventDefault(); // prevent the default action.
+
+    const value = document.getElementById('search').value;
+    console.log(value);
+
+    displaySearchResults(value);
+});
 
 
 const displaySearchResults = (value = "") => {
